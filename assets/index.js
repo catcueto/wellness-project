@@ -86,7 +86,6 @@ dogBtnEl.addEventListener('click', randoDogAPI);
 
 function questionPlease(){
 
-
   var pikachu = questions[indexQ] ;
   
   questionEL.innerHTML = pikachu.question
@@ -101,9 +100,7 @@ function questionPlease(){
       choicesEl.append(choicePattern); 
       choicePattern.addEventListener("click", nextQuestion)
       i++;
-  
   })
-  
   
   }
   
