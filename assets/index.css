@@ -18,13 +18,19 @@ body {
   background-color: var(--babypink);
   font-family: "Nunito";
   font-size: 1.2rem;
-  padding: 0;
-  margin: 0;
+}
+
+footer {
+  background-color: #caced1;
+}
+
+h2 {
+  text-align: center;
 }
 
 .custom-width {
   width: 100%;
-  height: 100vh;
+  height: 75vh;
 }
 
 .custom-navbar {
@@ -42,4 +48,68 @@ body {
 
 .custom-navbar a:hover {
   color: #1a4362;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rowApi {
+  display: inline-flex;
+  align-items: center;
+  color: #1a4362;
+}
+
+.dogApi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.dogApi p {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#dogBtn {
+  background-color: rgba(0, 102, 255, 0.835);
+  color: whitesmoke;
+  border-radius: 35px;
+  padding: 5px 10px;
+  border-style: none;
+  font-size: 40px;
+  text-align: center;
+}
+
+.widget {
+  display: inline-block;
+  border: #1a4362 solid;
+  padding: 5px;
+  text-align: center;
+  min-width: 310px;
+}
+
+.healthOrg {
+  display: flex;
+  justify-content: center;
+}
+
+#dogImg {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.portfolios img {
+  max-width: 200px;
 }

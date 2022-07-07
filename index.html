@@ -78,41 +78,49 @@
       </button>
     </div>
   </section>
-<br>
-<br>
+  <br>
+  <br>
   <div class="main container ">
     <div class="quiz row justify-content-evenly">
-      <div class="col-4 ">
-        <h2>Hey Im Row One</h2></div>
-      <div class="col-4 ">
-        <div class="card" >
+      <div class="row col-12 ">
+        <h2>Hey Im Row One</h2>
+      </div>
+
+      <div class="rowApi col-12">
+
+        <div class="dogApi col-9">
           <img id="dogImg" src="..." class="card-img-top" alt="...">
           <div class="card-body">
-            <p class="card-text">If you are feeling some type of way push my button baybay, and a new pups on the way.</p>
-            <button id="dogBtn" type="button" class="btn btn-success btn-lg">Fetch!</button>
+            <h2>Therapeutic Dog Photos</h2>
+            <p class="card-text">If you are feeling some type of way push my button baybay, and a new pups on the way.
+            </p>
+            <button id="dogBtn" type="button" class="center">Fetch!</button>
           </div>
         </div>
-        <div> <h2>Health</h2></div>
-        </div>
-        
-      </div>
-      
-    </div>
-    
 
-    <div class="apiResources container">
-        <div class="dogApi container"></div>
-        
-        <div class="healthOrg container">
-            <iframe src="https://www.health.gov/myhealthfinder?badge=true" name="myhealthfinderframe" frameborder="0" id="myhealthfinderframe" scrolling="yes" height="250" width="178" marginheight="0" title="myhealthfinder widget" marginwidth="0"><p>Your browser does not support iframes.</p></iframe>
+        <div class="widget col-3">
+          <p>Type in your information below to learn more about what you can do to improve your health.</p>
+          <div class="healthOrg container">
+            <iframe src="https://www.health.gov/myhealthfinder?badge=true" name="myhealthfinderframe" frameborder="0"
+              id="myhealthfinderframe" scrolling="yes" height="250" width="356" marginheight="0"
+              title="myhealthfinder widget" marginwidth="0">
+              <p>Your browser does not support iframes.</p>
+            </iframe>
+          </div>
         </div>
+      </div>
+
     </div>
+
   </div>
 
-  <footer class="footer container text-center text-white col-12" style="background-color: #caced1;">
+  </div>
+  <br>
+
+  <footer class="footer container col-12 text-center text-white">
     <div class="container portfolios">
 
-      <div class="row col-12" style="justify-content: center;align-items: center;">
+      <div class="row col-12">
 
         <div class="col-lg-2 col-md-12 mb-4 mb-md-0 catContain">
           <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
@@ -127,6 +135,15 @@
           <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
             <img src="./assets/img/Nash (1).png" class="Nashbi w-100" alt="Web Developer Nashbi Grand-Jean" />
             <a href="https://nashbi.github.io/Nashbi-First-Portfolio/">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-12 mb-4 mb-md-0 emergencyContain">
+          <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+            <img src="./assets/img/SWC.png" class="w-100" alt="Uplifting Music Video Link" />
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
               <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
             </a>
           </div>
@@ -149,41 +166,24 @@
             </a>
           </div>
         </div>
-
-        <div class="col-lg-2 col-md-12 mb-4 mb-md-0 emergencyContain">
-          <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
-            <img src="./assets/img/emergencyPush" class="w-100" alt="Uplifting Music Video Link" />
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
-              <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
-            </a>
-          </div>
-        </div>
       </div>
     </div>
 
-    <section ="apiResources container">
-      <div class="dogApi container"></div>
-      
-      <div class="healthOrg container">
-          <iframe src="https://www.health.gov/myhealthfinder?badge=true" name="myhealthfinderframe" frameborder="0" id="myhealthfinderframe" scrolling="yes" height="250" width="178" marginheight="0" title="myhealthfinder widget" marginwidth="0"><p>Your browser does not support iframes.</p></iframe>
+    <!-- Copyright -->
+    <footer>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-white">Sunshine Wellness</a>
       </div>
-    </section>
+      <!-- Copyright -->
+    </footer>
 
-  <!-- Copyright -->
-  <footer>
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2020 Copyright:
-    <a class="text-white">Sunshine Wellness</a>
-  </div>
-  <!-- Copyright -->
-  </footer>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  <script src="./assets/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/index.js"></script>
 </body>
 
 </html>
