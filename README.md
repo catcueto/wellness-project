@@ -1,5 +1,4 @@
-# wellness-project
-#Sunshine Wellness Center
+# Sunshine Wellness Center
 
 The idea behind this project originated from the desire to create a mental health-driven website sponsored by Sunshine Wellness Center. This site provides a daily quiz to keep track of your mental health progress, links to helpful information from the Health.Org website, and therapeutic dog photos. The quiz is intended to help users become more mindful and keep track of their mental health and stress levels.
 
