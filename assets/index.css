@@ -28,6 +28,7 @@ h2 {
   text-align: center;
 }
 
+
 .custom-width {
   width: 100%;
   height: 75vh;
@@ -95,8 +96,14 @@ h2 {
   margin: auto;
 }
 
+
+
 .quizContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+#options {
+  margin-bottom: 10px;
 }
