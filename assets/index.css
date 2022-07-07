@@ -68,6 +68,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-height: 325px;
 }
 
 .center {
@@ -93,6 +94,11 @@ h2 {
   text-align: center;
 }
 
+#dogBtn:hover {
+  background-color: rgb(54, 193, 140);
+  color:#1a4362;
+}
+
 .widget {
   display: inline-block;
   border: #1a4362 solid;
@@ -109,7 +115,7 @@ h2 {
 
 #dogImg {
   max-width: 400px;
-  max-height: 400px;
+  max-height: 325px;
 }
 
 .portfolios img {
