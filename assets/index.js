@@ -2,8 +2,12 @@ var healthOrgApi = 'https://health.gov/myhealthfinder/api/v3/topicsearch.json?To
 var dogBtnEl = document.querySelector('#dogBtn')
 var indexQ = 0;
 var questionEL= document.getElementById("question");
-var choicesEl = document.getElementById("options")
+var choicesEl = document.getElementById("options");
+var scoreBox = document.getElementById("scores");
 var score = 0;
+
+var lastTookQuiz = moment().format("MMM Do hh:mm:ss");
+$("#3a").text(lastTookQuiz);
 var questions = [ {
   // happiness = bigger score sadness unending is 0
 
@@ -81,8 +85,6 @@ function randoDogAPI() {
     });
 }
 
-dogBtnEl.addEventListener('click', randoDogAPI);
-
 
 function questionPlease(){
 
@@ -104,27 +106,50 @@ function questionPlease(){
   
   }
   
+
   function nextQuestion(event) {
       var clickButton = event.target.getAttribute('id-number');
       var numVal = parseInt(clickButton);
-      console.log(score);
-      console.log(typeof score);
-      score = score + numVal; // adds number values to scored answers
-      console.log(typeof clickButton)
-      console.log(typeof numVal)
-      console.log(score);
+      score = score + numVal; // sums number values to scored answers on click
       indexQ++;
-      if(indexQ>6) {
-          scorescreen();
-          return ;
-      }
-      questionPlease();
-  }
-  
-  function scorescreen() {
-      console.log('hello')
+      if (indexQ == 7) {
+        choicesEl.innerHTML = "";
+        questionEL.innerHTML = "Your Current Wellness score is: " + score + " out of 28.";
+        scoreScreen();
+    }
+    if (indexQ < 6) {
+        questionPlease();
+    }
   }
   
 
+  function allStorage() {
+    var archive = [],
+        keys = Object.keys(localStorage),
+        i = 0, key;
+    for (; key = keys[i+1]; i++) {
+        archive.push(localStorage.getItem(key));
+    }
+    return archive;
+}
+
+
+function scoreScreen() {
+    localStorage.setItem(lastTookQuiz, score);
+    var highscore = allStorage();
+    var highscoreArr = JSON.stringify(highscore).split(",");
+    var highscoreUL = document.createElement("ul");
+    highscoreArr.forEach((highscore) => {
+        // console.log(highscore);
+        var highscoreLI = document.createElement("li");
+        highscoreUL.append(highscoreLI);
+        scoreBox.append(highscoreUL);
+        var highscoreClean = highscore.replace(/[\[\]\"\']+/g,'');
+        highscoreLI.textContent = "Previous score: " + highscoreClean; 
+    });
+}
+
+
+  dogBtnEl.addEventListener('click', randoDogAPI);
   randoDogAPI();
   questionPlease();
