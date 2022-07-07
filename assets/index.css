@@ -1,0 +1,109 @@
+/* GENERAL STYLING 
+-- font-sizes: 1.2rem 1.4rem 2.4rem
+ */
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --babypink: #ffe1db;
+  --lightbrown: #998783;
+  --accentblue: #1a4362;
+  --lightseablue: #aab9bf;
+  --light: #f2f2f2;
+}
+
+html,
+body {
+  background-color: var(--babypink);
+  font-family: "Nunito";
+  font-size: 1.2rem;
+}
+
+footer {
+  background-color: #caced1;
+}
+
+h2 {
+  text-align: center;
+}
+
+
+.custom-width {
+  width: 100%;
+  height: 75vh;
+}
+
+.custom-navbar {
+  background-color: var(--lightbrown);
+}
+.custom-navbar a {
+  color: #f2f2f2;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.navbar {
+  color: blue;
+}
+
+.custom-navbar a:hover {
+  color: #1a4362;
+}
+
+.rowApi {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between ;
+  align-items: center;
+  color: #1a4362;
+}
+
+.dogApi p {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#dogBtn {
+  background-color: rgba(0, 102, 255, 0.835);
+  color: whitesmoke;
+  border-radius: 35px;
+  padding: 5px 10px;
+  border-style: none;
+  text-align: center;
+}
+
+#dogBtn:hover {
+  background-color: rgb(54, 193, 140);
+  color:#1a4362;
+}
+
+.widget {
+  display: flex;
+  border: 1px solid #1a4362;
+  text-align: center;
+  font-size: 14px;
+}
+
+.portfolios img {
+  height: 200px;
+}
+
+.profContain {
+  padding: 5px;
+  margin: auto;
+}
+
+
+
+.quizContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#options {
+  margin-bottom: 10px;
+}

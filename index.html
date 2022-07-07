@@ -26,9 +26,7 @@
   </head>
 
   <body>
-    <nav
-      class="navbar navbar-expand-lg expand-md expand-sm custom-navbar fixed-navbar"
-    >
+    <nav class="navbar navbar-expand-lg custom-navbar fixed-navbar">
       <div class="container-fluid">
         <a class="navbar-brand" href="#first-page">
           <img src="./assets/img/SWC.png" alt="" width="55" height="50" />
@@ -47,27 +45,28 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <!-- might get rid of Home tab later -->
               <a class="nav-link active" aria-current="page" href="#first-page"
                 >HOME</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#quiz-section">QUIZ</a>
+              <a class="nav-link" href="#quiz">QUIZ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#api-section">DOG VIDEOS</a>
+              <a class="nav-link" href="#dogs">DOG PICS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#api-section">HEALTHFINDER TOOL</a>
+              <a class="nav-link" href="#health">HEALTH TOOL</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact-info">CONTACT</a>
+              <a class="nav-link" href="#contact">CONTACT</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    <br />
+    <br />
 
     <section class="carousel" id="first-page">
       <div
@@ -119,61 +118,67 @@
       </div>
     </section>
     <br />
-    <br />
 
-    <section class="container" id="api-section">
-      <div class="rowApi col-12">
-        <div class="dogApi col-8" id="doggo-videos">
-          <img id="dogImg" src="..." class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h2>Therapeutic Dog Photos</h2>
-            <p class="card-text">
-              If you are feeling some type of way push my button baybay, and a
-              new pups on the way.
+    <div class="main container col-12">
+      <div class="quiz row justify-content-evenly" id="quiz">
+        <div
+          class="row col-12 quizContainer text-center rounded border border-dark"
+        >
+          <h4 id="quizTitle">Take the Daily Mental Health Checkup Quiz</h4>
+          <br />
+          <br />
+          <h2 id="question"></h2>
+          <div id="options" class="row justify-content-evenly"></div>
+          <div id="scores"></div>
+        </div>
+      </div>
+      <br />
+      <br />
+
+      <section class="container col-12">
+        <div class="rowApi col-12">
+          <div class="dogApi col-5" id="dogs">
+            <img id="dogImg" src="..." class="card-img-top" alt="Dog Images" />
+            <div class="card-body">
+              <h2>Therapeutic Dog Photos</h2>
+              <p class="card-text">
+                If you are feeling some type of way push my button baybay, and a
+                new pups on the way.
+              </p>
+              <button id="dogBtn" type="button" class="center">Fetch!</button>
+            </div>
+          </div>
+
+          <div class="widget col-3" id="health">
+            <p>
+              Type in your information below to learn more about what you can do
+              to improve your health.
             </p>
-            <button id="dogBtn" type="button" class="center">Fetch!</button>
+            <div class="healthOrg container">
+              <iframe
+                src="https://www.health.gov/myhealthfinder?badge=true"
+                name="myhealthfinderframe"
+                frameborder="0"
+                id="myhealthfinderframe"
+                scrolling="yes"
+                height="250"
+                width="280"
+                marginheight="0"
+                title="myhealthfinder widget"
+                marginwidth="0"
+              >
+                <p>Your browser does not support iframes.</p>
+              </iframe>
+            </div>
           </div>
         </div>
-
-        <div class="widget col-3" id="api-section">
-          <p>
-            Type in your information below to learn more about what you can do
-            to improve your health.
-          </p>
-          <div class="healthOrg container">
-            <iframe
-              src="https://www.health.gov/myhealthfinder?badge=true"
-              name="myhealthfinderframe"
-              frameborder="0"
-              id="myhealthfinderframe"
-              scrolling="yes"
-              height="250"
-              width="356"
-              marginheight="0"
-              title="myhealthfinder widget"
-              marginwidth="0"
-            >
-              <p>Your browser does not support iframes.</p>
-            </iframe>
-          </div>
-        </div>
-      </div>
-    </section>
-    <br />
-
-    <section class="container" id="quiz-section">
-      <div class="main container col-12">
-        <div class="quiz row justify-content-evenly">
-          <div class="row col-12">
-            <h2>Hey Im Row One</h2>
-            <button>START</button>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
+      <br />
+      <br />
+    </div>
 
     <footer class="footer container col-12 text-center text-white">
-      <div class="container portfolios" id="contact-info">
+      <div class="container portfolios" id="contact">
         <div class="row col-12">
           <div class="col-lg-2 col-md-12 mb-4 mb-md-0 profContain">
             <div
