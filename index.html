@@ -18,8 +18,6 @@
   <title>Sunshine Wellness Center</title>
 </head>
 
-
-
 <body>
   <nav class="navbar navbar-expand-lg custom-navbar">
     <div class="container-fluid">
@@ -61,15 +59,15 @@
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="./assets/img/smelling-roses.jpg" class="custom-width" alt="Woman smelling a rose" />
+          <img src="./assets/img/smelling-roses.jpg" class="d-block w-100 custom-width" alt="Woman smelling a rose" />
         </div>
         <div class="carousel-item">
-          <img src="./assets/img/nature.jpg" class="custom-width" alt="Individual walking in the woods" />
+          <img src="./assets/img/nature.jpg" class="d-block w-100 custom-width" alt="Individual walking in the woods" />
         </div>
         <div class="carousel-item">
-          <img src="./assets/img/breathe-img.jpg" class="custom-width" alt="Breathe neon lights" />
+          <img src="./assets/img/breathe-img.jpg" class="d-block w-100 custom-width" alt="Breathe neon lights" />
         </div>
-
+      </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
@@ -80,15 +78,34 @@
       </button>
     </div>
   </section>
-
-  <div class="main container">
-    <div class="quiz container">
-
+<br>
+<br>
+  <div class="main container ">
+    <div class="quiz row justify-content-evenly">
+      <div class="col-4 ">
+        <h2>Hey Im Row One</h2></div>
+      <div class="col-4 ">
+        <div class="card" >
+          <img id="dogImg" src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">If you are feeling some type of way push my button baybay, and a new pups on the way.</p>
+            <button id="dogBtn" type="button" class="btn btn-success btn-lg">Fetch!</button>
+          </div>
+        </div>
+        <div> <h2>Health</h2></div>
+        </div>
+        
+      </div>
+      
     </div>
+    
 
-    <div class="healthOrg container">
-      <div class="widget container"></div>
-      <div class="resourceLink container"></div>
+    <div class="apiResources container">
+        <div class="dogApi container"></div>
+        
+        <div class="healthOrg container">
+            <iframe src="https://www.health.gov/myhealthfinder?badge=true" name="myhealthfinderframe" frameborder="0" id="myhealthfinderframe" scrolling="yes" height="250" width="178" marginheight="0" title="myhealthfinder widget" marginwidth="0"><p>Your browser does not support iframes.</p></iframe>
+        </div>
     </div>
   </div>
 
