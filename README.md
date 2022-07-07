@@ -12,6 +12,5 @@ We created a multiple choice quiz that consists of seven questions. There are no
 ## Technologies
 The programming languages used to crated this project include HTML, CSS (Bootstrap and GoogleFonts), jquery UI, jquery, and JavaScript. The APIS utilized include HealthOrg, dogApi, and moment.js.
 
-<insert nav and carousel pic here>
 
 ![image](https://user-images.githubusercontent.com/101753839/177841862-6be328a0-ac7a-4850-bfda-5ec04b5b686b.png)
