@@ -106,7 +106,6 @@ function questionPlease(){
   
   }
   
-
   function nextQuestion(event) {
       var clickButton = event.target.getAttribute('id-number');
       var numVal = parseInt(clickButton);

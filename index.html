@@ -50,7 +50,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#quiz">QUIZ</a>
+              <a class="nav-link" href="#quiz-section">QUIZ</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#dogs">DOG PICS</a>
@@ -119,25 +119,32 @@
     </section>
     <br />
 
-    <div class="main container col-12">
+
+    <section class="main container col-12" id="quiz-section">
       <div class="quiz row justify-content-evenly" id="quiz">
         <div
-          class="row col-12 quizContainer text-center rounded border border-dark"
+          class="row col-12 quizContainer text-center"
         >
-          <h4 id="quizTitle">Take the Daily Mental Health Checkup Quiz</h4>
+          <h4 id="quizTitle" class="quiz-title">
+            Take the Daily Mental Health Checkup Quiz
+          </h4>
           <br />
           <br />
-          <h2 id="question"></h2>
-          <div id="options" class="row justify-content-evenly"></div>
-          <div id="scores"></div>
+          <h2 id="question" class="questions"></h2>
+          <div id="options" class="row justify-content-evenly answers"></div>
+          <div id="scores" class="final-score"></div>
+          <div class="button">
+          <button id="start-btn" class="start-btn btn">Start</button>
         </div>
       </div>
+      </div>
+      </section>
       <br />
       <br />
 
       <section class="container col-12">
         <div class="rowApi col-12">
-          <div class="dogApi col-5" id="dogs">
+          <div class="dogApi col-8" id="dogs">
             <img id="dogImg" src="..." class="card-img-top" alt="Dog Images" />
             <div class="card-body">
               <h2>Therapeutic Dog Photos</h2>
@@ -175,9 +182,9 @@
       </section>
       <br />
       <br />
-    </div>
+    </secti>
 
-    <footer class="footer container col-12 text-center text-white">
+    <footer class="footer col-12 text-center text-white" id="background-portf">
       <div class="container portfolios" id="contact">
         <div class="row col-12">
           <div class="col-lg-2 col-md-12 mb-4 mb-md-0 profContain">
@@ -186,10 +193,7 @@
               data-ripple-color="light"
             >
               <a href="https://github.com/catcueto">
-                <div
-                  class="mask"
-                  style="background-color: rgba(251, 251, 251, 0.2)"
-                >
+                <div class="mask">
                   <img
                     src="./assets/img/Catalina.PNG"
                     class="Catalina w-100"
@@ -206,10 +210,7 @@
               data-ripple-color="light"
             >
               <a href="https://nashbi.github.io/Nashbi-First-Portfolio/">
-                <div
-                  class="mask"
-                  style="background-color: rgba(251, 251, 251, 0.2)"
-                >
+                <div class="mask">
                   <img
                     src="./assets/img/Nash (1).png"
                     class="Nashbi w-100"
@@ -229,10 +230,7 @@
                 href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                 target="_blank"
               >
-                <div
-                  class="mask"
-                  style="background-color: rgba(251, 251, 251, 0.2)"
-                >
+                <div class="mask">
                   <img
                     src="./assets/img/SWC.png"
                     class="w-100"
@@ -249,10 +247,7 @@
               data-ripple-color="light"
             >
               <a href="https://github.com/dubsumm">
-                <div
-                  class="mask"
-                  style="background-color: rgba(251, 251, 251, 0.2)"
-                >
+                <div class="mask">
                   <img
                     src="./assets/img/William.PNG"
                     class="William w-100"
@@ -269,10 +264,7 @@
               data-ripple-color="light"
             >
               <a href="https://teagrinforde.github.io/portfolio-challenge2/">
-                <div
-                  class="mask"
-                  style="background-color: rgba(251, 251, 251, 0.2)"
-                >
+                <div class="mask">
                   <img
                     src="./assets/img/TForde.jpg"
                     class="Teagrin w-100"
@@ -285,8 +277,11 @@
         </div>
       </div>
 
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-        © 2020 Copyright:
+      <div
+        class="text-center p-3 footer-width"
+        style="background-color: #998783"
+      >
+        © 2022 Copyright:
         <a class="text-white">Sunshine Wellness</a>
       </div>
     </footer>
