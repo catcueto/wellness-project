@@ -57,8 +57,14 @@ var questions = [ {
 
 } ,
 
-]
+{
+  question: "How is your general interest in life?",
+  answers: [ "a: I am excited about my life", "b: I am content with my life", "c: I am dispassionate about my daily life", "d: I am disappointed with my daily life"],
+  answerValues: [4, 3, 2, 1]  
 
+}
+
+]
 
 function randoDogAPI() {
     var requestUrl = 'https://dog.ceo/api/breeds/image/random';
