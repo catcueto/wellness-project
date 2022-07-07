@@ -1,3 +1,7 @@
+var healthOrgApi = 'https://health.gov/myhealthfinder/api/v3/topicsearch.json?TopicId=30560';
+var dogBtnEl = document.querySelector('#dogBtn')
+
+
 
 function randoDogAPI() {
     var requestUrl = 'https://dog.ceo/api/breeds/image/random';
@@ -7,10 +11,12 @@ function randoDogAPI() {
       return response.json();
     })
     .then(function (data) {
-      console.log('hello');
-        var dogContainer = document.createElement('container');
-        THISISFILLER.appendChild(dogContainer);
+      console.log(data.message);
+      var url = data.message
+      var fillDogImg = document.querySelector('#dogImg').setAttribute('src', url);
+      return fillDogImg;
     });
 }
 
 randoDogAPI();
+dogBtnEl.addEventListener('click', randoDogAPI);
