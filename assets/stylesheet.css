@@ -36,10 +36,14 @@ body {
   font-weight: 500;
 }
 
-.navbar {
-  color: blue;
-}
-
 .custom-navbar a:hover {
   color: #1a4362;
+}
+
+.fixed-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
 }

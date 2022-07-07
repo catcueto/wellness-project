@@ -19,9 +19,9 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg custom-navbar">
+  <nav class="navbar navbar-expand-lg custom-navbar fixed-navbar">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="#first-page">
         <img src="./assets/img/SWC.png" alt="" width="55" height="50">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -32,30 +32,27 @@
         <ul class="navbar-nav">
           <li class="nav-item">
             <!-- might get rid of Home tab later -->
-            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+            <a class="nav-link active" aria-current="page" href="#first-page">HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">QUIZ</a>
+            <a class="nav-link" href="#quiz-section">QUIZ</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">DOG VIDEOS</a>
+            <a class="nav-link" href="#doggo-videos">DOGGO VIDEOS</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle custom-dropdown" href="#" id="navbarDropdownMenuLink" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              RESOURCES
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item custom-link" href="#">Widget</a></li>
-              <li><a class="dropdown-item custom-link" href="#">Helpful Articles</a></li>
-            </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="#health-finder">HEALTHFINDER TOOL</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-info">CONTACT</a>
+          </li>
+
         </ul>
       </div>
     </div>
   </nav>
 
-  <section class="carousel">
+  <section class="carousel" id="first-page">
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -81,11 +78,11 @@
 <br>
 <br>
   <div class="main container ">
-    <div class="quiz row justify-content-evenly">
+    <div class="quiz row justify-content-evenly" id="quiz-section">
       <div class="col-4 ">
         <h2>Hey Im Row One</h2></div>
-      <div class="col-4 ">
-        <div class="card" >
+             <div class="col-4 ">
+        <div class="card" id="doggo-videos">
           <img id="dogImg" src="..." class="card-img-top" alt="...">
           <div class="card-body">
             <p class="card-text">If you are feeling some type of way push my button baybay, and a new pups on the way.</p>
@@ -102,15 +99,15 @@
 
     <div class="apiResources container">
         <div class="dogApi container"></div>
-        
-        <div class="healthOrg container">
+      
+        <div class="healthOrg container" id="health-finder">
             <iframe src="https://www.health.gov/myhealthfinder?badge=true" name="myhealthfinderframe" frameborder="0" id="myhealthfinderframe" scrolling="yes" height="250" width="178" marginheight="0" title="myhealthfinder widget" marginwidth="0"><p>Your browser does not support iframes.</p></iframe>
         </div>
     </div>
   </div>
 
   <footer class="footer container text-center text-white col-12" style="background-color: #caced1;">
-    <div class="container portfolios">
+    <div class="container portfolios" id="contact-info">
 
       <div class="row col-12" style="justify-content: center;align-items: center;">
 
@@ -160,14 +157,6 @@
         </div>
       </div>
     </div>
-
-    <section ="apiResources container">
-      <div class="dogApi container"></div>
-      
-      <div class="healthOrg container">
-          <iframe src="https://www.health.gov/myhealthfinder?badge=true" name="myhealthfinderframe" frameborder="0" id="myhealthfinderframe" scrolling="yes" height="250" width="178" marginheight="0" title="myhealthfinder widget" marginwidth="0"><p>Your browser does not support iframes.</p></iframe>
-      </div>
-    </section>
 
   <!-- Copyright -->
   <footer>
