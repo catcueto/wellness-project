@@ -3,7 +3,7 @@ var dogBtnEl = document.querySelector('#dogBtn')
 var indexQ = 0;
 var questionEL= document.getElementById("question");
 var choicesEl = document.getElementById("options")
-
+var score = 0;
 var questions = [ {
   // happiness = bigger score sadness unending is 0
 
@@ -107,17 +107,24 @@ function questionPlease(){
   
   }
   
-  function nextQuestion() {
-      var clickButton = event.target.textContent;
+  function nextQuestion(event) {
+      var clickButton = event.target.getAttribute('id-number');
+      var numVal = parseInt(clickButton);
+      console.log(score);
+      console.log(typeof score);
+      score = score + numVal; // adds number values to scored answers
+      console.log(typeof clickButton)
+      console.log(typeof numVal)
+      console.log(score);
       indexQ++;
       if(indexQ>6) {
-          score();
+          scorescreen();
           return ;
       }
       questionPlease();
   }
   
-  function score() {
+  function scorescreen() {
       console.log('hello')
   }
   
