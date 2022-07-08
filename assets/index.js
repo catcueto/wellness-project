@@ -1,5 +1,6 @@
 var healthOrgApi = 'https://health.gov/myhealthfinder/api/v3/topicsearch.json?TopicId=30560';
 var dogBtnEl = document.querySelector('#dogBtn')
+var startBtn = document.querySelector('#start-btn');
 var indexQ = 0;
 var questionEL= document.getElementById("question");
 var choicesEl = document.getElementById("options");
@@ -89,12 +90,13 @@ function randoDogAPI() {
 function questionPlease(){
 
   var pikachu = questions[indexQ] ;
-  
+  scoreBox.innerHTML ='';
+  // highscoreU.innerHTML ='';
   questionEL.innerHTML = pikachu.question
   choicesEl.innerHTML ='';
   i = 0;
   pikachu.answers.forEach(function(choice) {
-  
+      startBtn.style.display= 'none';
       var choicePattern = document.createElement("Button"); 
       choicePattern.setAttribute("value",choice);
       choicePattern.setAttribute('id-number', pikachu.answerValues[i])
@@ -107,6 +109,7 @@ function questionPlease(){
   }
   
   function nextQuestion(event) {
+    
       var clickButton = event.target.getAttribute('id-number');
       var numVal = parseInt(clickButton);
       score = score + numVal; // sums number values to scored answers on click
@@ -151,4 +154,4 @@ function scoreScreen() {
 
   dogBtnEl.addEventListener('click', randoDogAPI);
   randoDogAPI();
-  questionPlease();
+  startBtn.addEventListener('click', questionPlease);
