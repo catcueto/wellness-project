@@ -16,3 +16,7 @@ The programming languages used to crated this project include HTML, CSS (Bootstr
 ![image](https://user-images.githubusercontent.com/101753839/177871503-8bf71913-645d-423c-951b-23dc32839b9f.png)
 
 ![image](https://user-images.githubusercontent.com/101753839/177841862-6be328a0-ac7a-4850-bfda-5ec04b5b686b.png)
+
+## Deployed Application
+
+Visit this link : https://catcueto.github.io/wellness-project/
